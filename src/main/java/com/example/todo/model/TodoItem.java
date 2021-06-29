@@ -11,6 +11,7 @@ public class TodoItem {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
+
     private Long itemId;
 
     @Column(columnDefinition = "BINARY(16)")

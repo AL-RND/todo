@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8"/>
   <title>Create and share a check list just a second! Publist - Never miss a thing!</title>
-  <link rel="stylesheet" type="text/css" th:href="@{/js/css/js/css/style.css}"/>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 
   <!--For jquery calling REST API-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <!--For material icon-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script src="/js/css/js/index.js/js/index.js"></script>
+  <script src="/js/index.js"></script>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
   <!-- First grab an UUID from backend ... listId is added at Java MainController -->
   <script th:inline="javascript">
     /*<![CDATA[*/
-    let glistId = /*[[${listId}]]*/
+    let glistId = [[${listId}]]
     /*]]>*/
   </script>
 </div>
